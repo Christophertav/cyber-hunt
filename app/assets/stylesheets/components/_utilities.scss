@@ -1,0 +1,48 @@
+body {
+  background-image: asset-url('bg-map.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+h1, h2, h3, h4, h5, h5 {
+  // font-family: 'Dancing Script', cursive;
+  // color: brown;
+  font-family: 'Monoton', cursive;
+  color: red;
+}
+
+.wrapper {
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  min-height: calc(100vh - 70px - 100px);
+  color: white;
+}
+
+.font-montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+.max-width-650px {
+  max-width: 650px;
+}
+.page-min-height {
+  min-height: calc(100vh - 170px)
+}
+.font-size-12px {
+  font-size: 12px;
+}
+.font-size-16px {
+  font-size: 16px;
+}
+.text-cookie {
+  color: $cookie;
+  &:hover{
+    text-decoration: none;
+    color: darken($cookie, 35%);
+  }
+}
+.border-cookie {
+  border-color: $cookie;
+}
+.px-10 {
+  padding: 0 6rem;
+}

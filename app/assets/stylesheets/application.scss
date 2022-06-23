@@ -1,0 +1,62 @@
+// Graphical variables
+@import "config/fonts";
+@import "config/colors";
+@import "config/bootstrap_variables";
+
+// External libraries
+@import "bootstrap/scss/bootstrap";
+// @import "font-awesome-sprockets";
+// @import "font-awesome";
+
+// Your CSS partials
+@import "layouts/index";
+@import "components/index";
+@import "units/index";
+//@import "pages/index";
+
+.db-data-hunt {
+  background-image: asset-url('ordi.png');
+  height: 267px;
+  width: 400px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  .db-data-hunt-screen {
+    position: absolute;
+    top: 11px;
+    left: 40px;
+    right: 42px;
+    bottom: 180px;
+    background: black;
+  }
+  iframe {
+    width: 100%; height: 180px;
+  }
+}
+
+.title {
+  // background-image: asset-url("title.png");
+  background-size: cover;
+  width: 600px;
+  height: 150px;
+  background: #FFE8E8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.connection {
+  position: relative;
+  color: black;
+  .nick-name {
+    position: absolute;
+    top: 120px;
+    left: 290px;
+  }
+  .email {
+    position: absolute;
+    top: 160px;
+    left: 290px;
+  }
+}

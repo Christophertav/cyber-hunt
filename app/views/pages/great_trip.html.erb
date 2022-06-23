@@ -1,0 +1,20 @@
+<div class="container px-5 text-justify">
+  <div class="px-5">
+
+    <%= render "components/title", title: "Décryptage" %>
+
+
+    <p>Vous touchez au but. Vous avez maintenant accès à la base de données. 
+    Celle-ci contient notamment les plans des bâtiments mais aussi ou se trouve 
+    précisément le coffre contenant l'œuf de Fabergé.
+    Malheureusement ces documents sont encryptés.</p>
+    <p>
+      Heureusement il existe un outil en ligne pour les décrypter. Voici <a target="_blank" href="https://decrypt.imageonline.co/">le lien du site</a>. 
+    </p>
+    <p>
+      Bravo! Vous avez trouvez les documents attendus par Arlette. Vous allez pouvoir les lui envoyer.
+    </p>
+    <%= render "components/dashboard", db: true %>
+  </div>
+</div>
+

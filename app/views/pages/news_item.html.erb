@@ -3,8 +3,8 @@
     <%= render "components/title", title: "Un passage en force!" %>
 
     <p>
-      Super! Cet employé s'est laissé piégé 
-      et le programme vous renvoie un imprime écran du moment où 
+      Super! Cet employé s'est laissé piéger
+      et le programme vous renvoie un imprime écran du moment où
       l'utilisateur a cherché à se connecter au site. Voici cet imprime écran.
     </p>
 
@@ -12,19 +12,19 @@
       <%= image_tag "connection.png", width: "900px"%>
       <div class="nick-name"><%= current_user.employee_nick_name %></div>
       <div class="email"><%= current_user.employee_email %></div>
-    </div>    
+    </div>
 
 
     <p>
-      Grâce à cet imprime écran, vous pouvez voir quel est le pseudo de 
-      l’employé. Par-contre vous ne pouvez pas voir son mot de passe. 
-      Rassurez-vous, il existe plusieurs techniques pour trouver 
-      un mot de passe à 6 chiffres. 
-      L’une des techniques s’appelle l’attaque en force. 
-      Elle consiste à tester les mots de passe les plus utilisés en espérant 
+      Grâce à cet imprime écran, vous pouvez voir quel est le pseudo de
+      l’employé. Par-contre vous ne pouvez pas voir son mot de passe.
+      Rassurez-vous, il existe plusieurs techniques pour trouver
+      un mot de passe à 6 chiffres.
+      L’une des techniques s’appelle l’attaque en force.
+      Elle consiste à tester les mots de passe les plus utilisés en espérant
       que l’utilisateur en a choisi un parmi cela.
-      La liste des mots de passe les plus utilisés en 2020 est disponible à 
-      <a target="_plank" href="https://nordpass.com/fr/most-common-passwords-list/">cette adresse</a> 
+      La liste des mots de passe les plus utilisés en 2021 est disponible à
+      <a target="_plank" href="https://nordpass.com/fr/most-common-passwords-list/">cette adresse</a>
     </p>
     <p>Sur le site https://havior-company.herokuapp.com/team , essayez successivement chacun de ces mots de passe les plus utilisés. Dans le formulaire ci-dessous, ne saisissez uniquement que le mot de passe qui vous a permis de vous connecter au site https://havior-company.herokuapp.com/team. Sinon les étapes suivantes ne fonctionneront pas.</p>
     <%= render "components/dashboard", db: false %>

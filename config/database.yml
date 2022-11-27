@@ -80,6 +80,7 @@ test:
 #
 production:
   <<: *default
-  database: DATABASE_URL
-  username: data_hunt
-  password: <%= ENV['DATA_HUNT_DATABASE_PASSWORD'] %>
+  database: cyber-hunt
+  username: cyber-hunt
+  # password: <%= ENV['DATA_HUNT_DATABASE_PASSWORD'] %>
+  url: <%= ENV['SCALINGO_POSTGRESQL_URL'] %>

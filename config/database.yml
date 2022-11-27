@@ -80,6 +80,6 @@ test:
 #
 production:
   <<: *default
-  database: data_hunt_production
+  database: DATABASE_URL
   username: data_hunt
   password: <%= ENV['DATA_HUNT_DATABASE_PASSWORD'] %>

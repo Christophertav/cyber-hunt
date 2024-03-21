@@ -18,11 +18,11 @@ class Result < ApplicationRecord
   #   "soleil"
   # ]
 
-  EMPLOYEE_PWD = "qwerty"
+  EMPLOYEE_PWD = "azerty"
 
   DB_PASSWORD = "password"
   PLACE = "bedroom".parameterize
-  
+
   validate :website_validation
   validate :employee_email_validation
   validate :employee_pwd_validation
@@ -52,7 +52,7 @@ class Result < ApplicationRecord
     if !employee_email.present? || !employee_email.include?(EMPLOYEE_EMAIL) || employee_emails.include?(employee_email)
       errors.add(:employee_email, "Cet employé a un antivirus. Essayez en un autre")
     end
-  end  
+  end
 
   def employee_pwd_validation
     # if !employee_pwd.present? || !EMPLOYEE_PWDS.include?(employee_pwd)
